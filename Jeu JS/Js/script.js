@@ -101,7 +101,7 @@ function bestTime(){
     document.getElementById("MeilleureTempsCount").innerHTML = localStorage.getItem("bestcount")
     document.getElementById("nbBoxs").innerHTML = nbBox
 
-    if(hour <= bestHour && minute <= bestMinute && seconde <= bestSeconde && count <= bestCount){ 
+    if(hour <= bestHour && minute <= bestMinute && seconde <= bestSeconde || count <= bestCount){ 
 
         bestHour = hour
         bestMinute = minute
